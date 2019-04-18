@@ -21,7 +21,6 @@ pipeline {
         }
         
         stage ('build') {
-	   when { changeset "srini/*.txt" }
             steps {
                 sh 'mvn clean install'
             }
