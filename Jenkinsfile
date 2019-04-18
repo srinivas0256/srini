@@ -21,7 +21,7 @@ pipeline {
         }
         
         stage ('build') {
-	   when { changeset "anand/*.txt" }
+	   when { changeset "srini/*.txt" }
             steps {
                 sh 'mvn clean install'
             }
